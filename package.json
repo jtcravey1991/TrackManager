@@ -1,0 +1,28 @@
+{
+  "name": "TrackManager",
+  "version": "1.0.0",
+  "description": "An asset tracker designed to manage calibration, maintenance and repair records and schedules in a manufacturer setting",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtcravey1991/TrackManager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtcravey1991/TrackManager/issues"
+  },
+  "homepage": "https://github.com/jtcravey1991/TrackManager#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mongoose": "^5.10.9",
+    "passport": "^0.4.1",
+    "path": "^0.12.7"
+  }
+}
