@@ -9,7 +9,7 @@ const equipmentNoteSchema = new Schema({
         required: true
     },
     asset: {
-        type: Schema.Types.ObejctId,
+        type: Schema.Types.ObjectId,
         ref: "Asset",
         required: true
     },
