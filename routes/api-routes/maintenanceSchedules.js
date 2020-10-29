@@ -1,4 +1,4 @@
-const router = require(express).Router();
+const router = require("express").Router();
 const maintenanceScheduleController = require("../../controllers/maintenanceScheduleController");
 const isAuthenticated = require("../../config/middleware/isAuthenticated");
 

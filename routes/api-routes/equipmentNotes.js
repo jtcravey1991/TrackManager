@@ -18,7 +18,7 @@ router.route("/by-asset/:id")
     .get(equipmentNoteController.findByAsset);
 
 router.route("/:id")
-    .get(equpimentNoteController.findOne)
+    .get(equipmentNoteController.findOne)
     .put(equipmentNoteController.update)
     .delete(equipmentNoteController.delete);
 

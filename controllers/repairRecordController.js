@@ -58,7 +58,7 @@ module.exports = {
     // deletes a repair record by id
     delete: function (req, res) {
         db.RepairRecord.findByIdAndDelete(req.params.id)
-        .then(async (dbRepairRecord_ => {
+        .then(async (dbRepairRecord) => {
             await db.User.findByIdAndUpdate(dbRepairRecord.user, { $pull: { repairRecords: dbRepairRecord._id }});
             await db.Asset.findByIdAndUpdate(dbRepairRecord.asset, { $pull: {repairRecords: dbRepairRecord._id}});
             return res.json(dbRepairRecord)

@@ -1,4 +1,4 @@
-const router = require(express).Router();
+const router = require("express").Router();
 const calibrationScheduleController = require("../../controllers/calibrationScheduleController");
 const isAuthenticated = require("../../config/middleware/isAuthenticated");
 
